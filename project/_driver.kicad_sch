@@ -5,8 +5,8 @@
   (paper "A4")
 
   (title_block
-    (title "WormControl-Relay15x5t15-ControlUI")
-    (date "2024-12-19")
+    (title "WormControl-Input32-UIBoard")
+    (date "2026-02-10")
     (rev "0.1")
     (company "makerspace.lt")
   )
