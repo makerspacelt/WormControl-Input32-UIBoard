@@ -12,7 +12,7 @@ function run_kibot() {
 	time docker run --rm -it \
 	--volume "$(pwd):/tmp/workdir" \
 	--workdir "/tmp/workdir" \
-	setsoft/kicad_auto:ki6.0.10_Debian \
+	ghcr.io/inti-cmnb/kicad6_auto:dev \
 	/bin/bash -c "groupadd -g$gid u; useradd -u$uid -g$gid -d/tmp u; su u -c 'cd project && kibot -c .kibot.yaml $*'"
 }
 
@@ -70,6 +70,7 @@ sed -i '/[/]CreationDate.*$/d' ./gen/pcb.pdf
 rm ./gen/*rc.txt || true
 
 cp -f ./gen/bom_lcsc.csv ./gen/single/_bom.csv
+cp -f ./gen/img_pcb_3d_front.png ./gen/single/front.png
 
 mv -f ./gen/project.step ./gen/${sch_title}.step
 

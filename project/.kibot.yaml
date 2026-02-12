@@ -37,7 +37,7 @@ outputs:
       color_theme: '_builtin_default'
       pages:
         - sheet: 'Drawings'
-          scaling: 2
+          scaling: 1
           layers: 
           - layer: F.Mask
             color: '#111111'
@@ -138,9 +138,6 @@ outputs:
     options:
       output: 'bom.csv'
       ref_separator: ','
-      ignore_virtual: false
-      include_no_fp: true
-      ignore_dnf: false
       csv:
         hide_pcb_info: true
         hide_stats_info: true
