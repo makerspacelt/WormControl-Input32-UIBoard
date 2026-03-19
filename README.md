@@ -9,9 +9,6 @@ WormControl Input32 User Interface board
 
 NOTE: This is only a prototype now, so things might not work and everything might change 
 
-Basic target features:
-
-* Compatibility with esphome and Home Assistant
 
 
 

@@ -31,6 +31,9 @@ sch_version="$(grep '\(rev "[^"]*\)"' project/project.kicad_sch | cut -d'"' -f2)
 sch_title="$(grep '\(title "[^"]*\)"' project/project.kicad_sch | cut -d'"' -f2)"
 echo "http://${sch_title}.makerspace.lt/v${sch_version}" \
         | qrencode -o - -l L -m1 -d256 -s5 > gen/qr_link.png
+# make qr to product link (not the board)
+echo "http://WormControl-Input32.makerspace.lt/" \
+	| qrencode -o - -l L -m1 -d256 -s5 > gen/qr_link.png
 
 # convert png to footprint as bitmap2component cannot be used from cli
 #curl -sSL -X POST \
@@ -70,7 +73,6 @@ sed -i '/[/]CreationDate.*$/d' ./gen/pcb.pdf
 rm ./gen/*rc.txt || true
 
 cp -f ./gen/bom_lcsc.csv ./gen/single/_bom.csv
-cp -f ./gen/img_pcb_3d_front.png ./gen/single/front.png
 
 mv -f ./gen/project.step ./gen/${sch_title}.step
 
