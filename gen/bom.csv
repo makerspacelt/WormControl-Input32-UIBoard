@@ -10,4 +10,4 @@
 "9","Resistor","R","R101","47k","R_0402_1005Metric_Pad0.72x0.64mm_HandSolder","1"," ","~","C25792","B"
 "10","4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol","SW_DIP_x04","SW101","SW_DIP_x04","SW_DIP_SPSTx04_Slide_6.2x11.16mm_P2.54mm","1"," ","https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_KAIFENG-KF1027B-04P-G00-DFT-01B_C976366.pdf","C976366","E"
 "11","8-bit serial in/out Shift Register 3-State Outputs","74HC595","U201,U301,U401,U501","74HC595","TSSOP-16_4.4x5mm_P0.65mm","4"," ","https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590920591287668736","C20613246","E"
-"12","Digital Temperature Sensor with I2C/SMBus Interface, +/-2° C, one-shot conversion, alert, SOT-23-6","TMP101","U101","TMP102","SOT-563","1"," ","https://www.lcsc.com/datasheet/C99269.pdf","C99269","E"
+"12","Digital Temperature Sensor, +/- 3 °C, low-Power, SMBus, 12 bit, Two-Wire Serial Interface, SOT-563","TMP102xxDRL","U101","TMP102","SOT-563","1"," ","https://www.ti.com/lit/ds/symlink/tmp102.pdf","C99269","E"
